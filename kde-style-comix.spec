@@ -1,6 +1,4 @@
-
 %define         _name	comix
-
 Summary:	KDE style - %{_name}
 Summary(pl):	Styl do KDE - %{_name}
 Name:		kde-style-%{_name}
@@ -14,6 +12,7 @@ URL:		http://www.kde-look.org/content/show.php?content=16028
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	kdelibs-devel
+BuildRequires:	rpmbuild(macros) >= 1.129
 BuildRequires:	unsermake
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -28,8 +27,8 @@ u¿ytkownika.
 %setup -q -n %{_name}-%{version}
 
 %build
-cp -f %{_datadir}/automake/config.sub admin
-export UNSERMAKE=%{_datadir}/unsermake/unsermake
+cp -f /usr/share/automake/config.sub admin
+export UNSERMAKE=/usr/share/unsermake/unsermake
 %{__make} -f Makefile.cvs
 
 %configure \
