@@ -12,9 +12,9 @@ Source0:	http://www.kde-look.org/content/files/16028-%{_name}-%{version}.tar.bz2
 # Source0-md5:	a4ee90dd8daae73da829a0bf53c8ac24
 URL:		http://www.kde-look.org/content/show.php?content=16028
 BuildRequires:	autoconf
-BuildRequires:	unsermake
 BuildRequires:	automake
 BuildRequires:	kdelibs-devel
+BuildRequires:	unsermake
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
