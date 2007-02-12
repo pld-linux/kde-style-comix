@@ -1,6 +1,6 @@
 %define         _name	comix
 Summary:	KDE style - %{_name}
-Summary(pl):	Styl do KDE - %{_name}
+Summary(pl.UTF-8):   Styl do KDE - %{_name}
 Name:		kde-style-%{_name}
 Version:	0.1.3
 Release:	1
@@ -19,9 +19,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 %{_name} is a cartoon like style with rounded user interface elements.
 
-%description -l pl
-%{_name} to kreskówkowy styl z zaokr±glonymi elementami interfejsu
-u¿ytkownika.
+%description -l pl.UTF-8
+%{_name} to kreskÃ³wkowy styl z zaokrÄ…glonymi elementami interfejsu
+uÅ¼ytkownika.
 
 %prep
 %setup -q -n %{_name}-%{version}
